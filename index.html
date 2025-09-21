@@ -6,14 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="/Styless.css">
        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <style>
+        ul li{
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        ul li :hover{
+            color: royalblue;
+            background-color: rgb(126, 105, 241);
+        }
+       </style>
 </head>
 <body>
-    <nav class="bg-green-200 flex items-center justify-around">
-        <div>
-            <h2>N</h2>
-            <h1>Nishi</h1>
+    <nav class="bg-green-200 flex items-center justify-around py-6 shadow-md">
+        <div class="flex gap-3 items-center"> 
+            <h2 class="text-xl font-semibold text-white bg-purple-300 px-3 py-2 rounded-full">N</h2>
+            <h1 class="text-3xl font-semibold">Nishi</h1>
         </div>
-        <ul>
+        <ul class="flex gap-16 font-medium">
             <li><Home href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Portfolio</a></li>
